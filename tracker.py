@@ -7,7 +7,7 @@ import plotly.express as px  # For nice charts
 
 # --- Configuration ---
 DATA_FILE = "study_history.csv"
-st.set_page_config(page_title="FocusFlow Pro", page_icon="⏳", layout="wide")
+st.set_page_config(page_title="StudyStack", page_icon="⏳", layout="wide")
 
 # --- Helper Functions ---
 def load_data():
@@ -49,7 +49,7 @@ if 'break_count' not in st.session_state:
     st.session_state.break_count = 0
 
 # --- App Layout ---
-st.title("⏳ FocusFlow: Analytics Edition")
+st.title("⏳ StudyStack")
 
 # Create Tabs
 tab1, tab2 = st.tabs(["⏱️ Study Timer", "📊 Dashboard"])
